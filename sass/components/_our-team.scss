@@ -1,0 +1,66 @@
+@import './social-links';
+
+.our-team {
+
+  @media screen and (min-width:768px) {
+    display: flex;
+  }
+
+  @media screen and (max-width:1199px) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.our-team__item {
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: $bg-color;
+
+  @media screen and (max-width:767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width:1199px) {
+    flex-basis: 354px;
+  
+    &:not(:nth-last-child(-n+2)) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width:1200px) {
+    width: calc((100% - 90px) / 4);
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.our-team__photo{
+  width: 100%;
+}
+
+.our-team__info{
+  padding: 30px 0;
+}
+
+.our-team__name{
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  color: $title-color;
+}
+
+.our-team__career{
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
