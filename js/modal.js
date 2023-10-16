@@ -1,13 +1,16 @@
-const refs = {
-	openModalBtn: document.querySelector("[data-open-modal]"),
-	closeModalBtn: document.querySelector("[data-close-modal]"),
-	backdrop: document.querySelector("[data-backdrop]"),
-};
+const openModalBtn = document.querySelector("[data-open-modal]");
+const closeModalBtn = document.querySelector("[data-close-modal]");
+const backdrop = document.querySelector("[data-backdrop]");
 
-refs.openModalBtn.addEventListener("click", toggleModal);
-refs.closeModalBtn.addEventListener("click", toggleModal);
+openModalBtn.addEventListener("click", toggleModal);
+closeModalBtn.addEventListener("click", toggleModal);
 
 function toggleModal() {
 	document.body.classList.toggle("lock-form");
-	refs.backdrop.classList.toggle("is-hidden");
+	backdrop.classList.toggle("is-hidden");
 }
+window.addEventListener("click", e => {
+	if (e.target === backdrop) {
+		toggleModal();
+	}
+});
