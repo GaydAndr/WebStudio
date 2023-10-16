@@ -21,7 +21,7 @@ function innerBtn(data) {
 }
 
 // Завантаження JSON-даних і генерація кнопок
-fetch("../data/filterButtons .json")
+fetch("../data/filterButtons.json")
 	.then(response => response.json())
 	.then(data => {
 		innerBtn(data);
