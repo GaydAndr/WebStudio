@@ -1,11 +1,10 @@
-.footer{
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $dark-bg-color;
-
   &__container {
     display: flex;
-    
+
     @media screen and (max-width: 767px) {
       max-width: 100%;
       flex-direction: column;
@@ -25,7 +24,7 @@
   }
 }
 
-.footer__item{
+.footer__item {
   @media screen and (max-width: 767px) {
     &:last-child {
       width: 100%;
@@ -42,9 +41,9 @@
     &:not(:last-child) {
       margin-right: 70px;
     }
-  
-    &:last-child{
-        flex-grow: 1;
+
+    &:last-child {
+      flex-grow: 1;
     }
   }
 }
@@ -53,8 +52,8 @@
   margin-bottom: 20px;
   color: #fff;
 
-  &:hover{
-  color: #fff;
+  &:hover {
+    color: #fff;
   }
 }
 
