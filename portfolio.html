@@ -91,8 +91,8 @@
         <ul class="filter ">
           <!-- filterButton -->
         </ul>
-        <ul class="product ">
-          <!-- prtfolio-Item -->
+        <ul class="product" data-open-modal>
+          <!-- portfolio-Item -->
         </ul>
       </div>
     </section>
@@ -169,32 +169,22 @@
     </div>
   </footer>
 
-
-  <!-- <div id="product__modal" class="product__modal">
-    <div class="modal-prd__content">
-      <span class="close">&times;</span>
-      <div class="modal__body">
-      </div>
-    </div>
-  </div> -->
   <div class="backdrop is-hidden" data-backdrop>
-    <div id="product__modal" class="modal">
+    <div class="modal">
       <button class="modal__close" type="button" data-close-modal>
         <svg class="icon modal__icon" width="11" height="11">
           <use href="./images/icons.svg#close"></use>
         </svg>
       </button>
-      <div class="modal__body">
+      <div id="modal__body">
         <!-- Тут буде відображатися вміст модального вікна  -->
       </div>
     </div>
   </div>
 
   <script src="./js/menu.js"></script>
-  <script src="./js/prtfolio-Item.js"></script>
-  <script src="./js/filterButton.js"></script>
-  <script src="./js/product-modal.js"></script>
-  <!-- <script src="./js/modal.js"></script> -->
+  <script src="./js/mainPortfolio.mjs" type="module"></script>
+  <script src="./js/modals/modal.mjs" type="module"></script>
 
 
 </body>
